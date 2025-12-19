@@ -10,7 +10,7 @@ export default function FAQSection({ faqs }) {
   };
 
   return (
-    <Container py={{ base: 16, md: 24 }}>
+    <Container>
       <VStack spacing={0} align="stretch">
         {faqs.map((faq, index) => {
           const isOpen = openId === faq.id;
