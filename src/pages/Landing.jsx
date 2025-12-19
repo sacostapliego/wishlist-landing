@@ -6,6 +6,10 @@ import photo1 from '../assets/screenshots/1.png';
 import photo2 from '../assets/screenshots/2.png';
 import photo3 from '../assets/screenshots/3.png';
 
+import newphoto1 from '../assets/screenshots/1-portrait.png';
+import newphoto2 from '../assets/screenshots/2-portrait.png';
+import newphoto3 from '../assets/screenshots/3-portrait.png';
+
 const wishlistUrl = 'https://cardinal-wishlist.onrender.com/';
 
 export default function Landing() {
@@ -36,25 +40,19 @@ export default function Landing() {
           Go To Wishlist App
         </HoverArrowButton>
 
-        <HStack justify="center" gap={8} w="full" flex={1}>
+        <HStack justify="center" gap={0} w="full" flex={1}>
           <Image 
-            shadow="md"
-            borderRadius={16}
-            h="2xl"
-            src={photo2}
+            h="3xl"
+            src={newphoto2}
             display={{ base: 'none', md: 'block' }}
           />
           <Image 
-            shadow="md"
-            borderRadius={16}
-            h="3xl"
-            src={photo1}
+            h="4xl"
+            src={newphoto1}
           />
           <Image 
-            shadow="md"
-            borderRadius={16}
-            h="2xl"
-            src={photo3}
+            h="3xl"
+            src={newphoto3}
             display={{ base: 'none', md: 'block' }}
           />
         </HStack>
