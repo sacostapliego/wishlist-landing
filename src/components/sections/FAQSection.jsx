@@ -25,7 +25,7 @@ export default function FAQSection({ faqs }) {
                 <HStack spacing={4} align="flex-start">
                   <Box
                     className="faq-icon"
-                    transition="transform 200ms ease"
+                    transition="transform 300ms ease"
                     transform={isOpen ? 'rotate(180deg)' : 'rotate(0deg)'}
                     mt={1}
                     flexShrink={0}
