@@ -8,7 +8,6 @@ import { faqData } from '../data/faqData';
 
 
 const defaultFeatures = [
-  { icon: FaPython, label: 'Python\nSupport' },
   { icon: RiSupabaseFill, label: 'Database\nIntegration' },
   { icon: FaAws, label: 'Image\nHandling' },
   { icon: SiRender, label: 'API\nDeployment' },
@@ -29,7 +28,7 @@ export default function Backend() {
           {/* [IMAGE OF BACKEND ARCHITECTURE DIAGRAM HERE] */}
         </Text>
       </Container>
-      <FeaturesSection features={defaultFeatures} />
+      <FeaturesSection features={defaultFeatures} columns={{ base: 3, md: 3 }} />
       <FAQSection faqs={faqData} />
     </VStack>
   );

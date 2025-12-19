@@ -14,11 +14,11 @@ const defaultFeatures = [
   { icon: FaSync, label: 'Real-time\nSync' },
 ];
 
-export default function FeaturesSection({ id = 'features', features = defaultFeatures }) {
+export default function FeaturesSection({ id = 'features', features = defaultFeatures, columns = { base: 2, md: 4 }  }) {
   return (
-    <Container id={id} maxW="container.lg" py={{ base: 16, md: 24 }}>
+    <Container id={id} py={{ base: 16, md: 24 }}>
       <SimpleGrid
-        columns={{ base: 2, md: 4 }}
+        columns={columns}
         rowGap={{ base: 14, md: 20 }}
         justifyItems="center"
         >

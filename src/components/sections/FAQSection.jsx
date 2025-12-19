@@ -10,7 +10,9 @@ export default function FAQSection({ faqs }) {
   };
 
   return (
-    <Container>
+    <Container 
+        maxW={{base:"60vw",}} 
+        >
       <VStack spacing={0} align="stretch">
         {faqs.map((faq, index) => {
           const isOpen = openId === faq.id;
