@@ -3,6 +3,8 @@ import FeaturesSection from '../components/sections/FeaturesSection';
 import { FaPython, FaAws } from "react-icons/fa";
 import { SiTypescript, SiExpo, SiRender } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
+import FAQSection from '../components/sections/FAQSection';
+import { faqData } from '../data/faqData';
 
 
 const defaultFeatures = [
@@ -28,6 +30,7 @@ export default function Backend() {
         </Text>
       </Container>
       <FeaturesSection features={defaultFeatures} />
+      <FAQSection faqs={faqData} />
     </VStack>
   );
 }

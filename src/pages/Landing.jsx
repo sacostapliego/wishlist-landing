@@ -17,7 +17,6 @@ export default function Landing() {
     <VStack align="start" spacing={12} pt={8}>
       <Container 
         id="hero"
-        maxW="container.lg"
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -42,16 +41,16 @@ export default function Landing() {
 
         <HStack justify="center" gap={0} w="full" flex={1}>
           <Image 
-            h="3xl"
+            h={{base: "1xl", md: "3xl"}}
             src={newphoto2}
             display={{ base: 'none', md: 'block' }}
           />
           <Image 
-            h="4xl"
+            h={{base: "2xl", md: "4xl"}}
             src={newphoto1}
           />
           <Image 
-            h="3xl"
+            h={{base: "1xl", md: "3xl"}}
             src={newphoto3}
             display={{ base: 'none', md: 'block' }}
           />
