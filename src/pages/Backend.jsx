@@ -1,10 +1,11 @@
-import { Container, Heading, Text, VStack } from '@chakra-ui/react';
+import { Container, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import FeaturesSection from '../components/sections/FeaturesSection';
 import { FaPython, FaAws } from "react-icons/fa";
 import { SiTypescript, SiExpo, SiRender } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 import FAQSection from '../components/sections/FAQSection';
 import { faqData } from '../data/faqData';
+import backendImage from '../assets/drawings/backend-fastapi.png';
 
 
 const defaultFeatures = [
@@ -25,11 +26,16 @@ export default function Backend() {
         textAlign="center"
       >
         <Text mb={14} fontSize="xl" fontWeight="bold">
-          {/* [IMAGE OF BACKEND ARCHITECTURE DIAGRAM HERE] */}
+          <Image 
+          src={backendImage} 
+          alt="Backend Illustration" 
+          borderRadius={16} 
+          boxShadow="md"
+          />
         </Text>
       </Container>
-      <FeaturesSection features={defaultFeatures} columns={{ base: 3, md: 3 }} />
       <FAQSection faqs={faqData} />
+      <FeaturesSection features={defaultFeatures} columns={{ base: 3, md: 3 }} />
     </VStack>
   );
 }
