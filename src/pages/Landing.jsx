@@ -10,7 +10,7 @@ import newphoto1 from '../assets/screenshots/1-portrait.png';
 import newphoto2 from '../assets/screenshots/2-portrait.png';
 import newphoto3 from '../assets/screenshots/3-portrait.png';
 
-const wishlistUrl = 'https://cardinal-wishlist.onrender.com/';
+const wishlistUrl = 'https://cardinalwishlist.vercel.app/';
 
 export default function Landing() {
   return (
